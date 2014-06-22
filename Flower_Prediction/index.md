@@ -45,5 +45,5 @@ Our second opinion model is too much to fit on one slide, but here's an example 
 ```
 
 ```
-## [1] "Our second opinion algorithm thinks you have a setosa"
+## [1] "Our second model thinks you have a setosa"
 ```
