@@ -65,5 +65,5 @@ library(rpart)
 k<-data.frame(Sepal.Length=4.3, Sepal.Width=2, 
               Petal.Length=1, Petal.Width=2)
 print(paste("Our main tree thinks you have a",as.character(predict(fit1,k))));
-print(paste("Our second opinion algorithm thinks you have a",as.character(predict(fit2,k))))
+print(paste("Our second model thinks you have a",as.character(predict(fit2,k))))
 ```
