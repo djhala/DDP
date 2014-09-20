@@ -33,17 +33,37 @@ The <i>Iris Species Prediction App</i> is incredibly user friendly. Your custome
 
 ## Our Classification Tree
 
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
+```{r, echo=FALSE}
+load('C:/Users/Brett Condron/Desktop/Workspace/Class/shiny/devdatprod/App-1/fit.Rdata')
+#load('C:/Users/Brett Condron/Desktop/Workspace/Class/shiny/devdatprod/App-1/fit2.Rdata')
+#library(caret)
+#library(lattice)
+#library(ggplot2)
+#library(randomForest)
+library(rpart)
+library(rpart.plot)
+fancyRpartPlot(fit1$finalModel)
+
+#k<-data.frame(Sepal.Length=4.3, Sepal.Width=2, 
+#              Petal.Length=1, Petal.Width=2)
+#predict(fit1,k)
+```
 
 ---
 
 ## Example
 Our second opinion model is too much to fit on one slide, but here's an example of how it works! You just put in the dimensions from two slides ago and voila!
+```{r, echo=FALSE}
+load('C:/Users/Brett Condron/Desktop/Workspace/Class/shiny/devdatprod/App-1/fit.Rdata')
+load('C:/Users/Brett Condron/Desktop/Workspace/Class/shiny/devdatprod/App-1/fit2.Rdata')
+library(caret)
+library(lattice)
+library(ggplot2)
+library(randomForest)
+library(rpart)
 
-```
-## [1] "Our main tree thinks you have a setosa"
-```
-
-```
-## [1] "Our second model thinks you have a setosa"
+k<-data.frame(Sepal.Length=4.3, Sepal.Width=2, 
+              Petal.Length=1, Petal.Width=2)
+print(paste("Our main tree thinks you have a",as.character(predict(fit1,k))));
+print(paste("Our second model thinks you have a",as.character(predict(fit2,k))))
 ```
