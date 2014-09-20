@@ -1,6 +1,5 @@
 # Automatic or Manual: A regression analysis using the mtcars dataset
 
-
 ## Executive Summary
 
 Do cars with manual transmission behave more favorably than automatic transmission cars with respect to fuel efficiency? It is a common belief that changing gears manually results in better fuel management. In this report we will use a dataset from the 1974 Motor Trend US magazine to answer the following questions:
@@ -34,12 +33,11 @@ xfit<-seq(min(x),max(x),length=40)
 yfit<-dnorm(xfit,mean=mean(x),sd=sd(x))
 yfit <- yfit*diff(h$mids[1:2])*length(x)
 lines(xfit, yfit, col="blue", lwd=2)
-
 # Kernel Density Plot
 d <- density(mtcars$mpg)
 plot(d, xlab = "MPG", main ="Density Plot of MPG")
 ```
-![plot of chunk Rplot](rm_01.png)
+![plot of chunk Rplot](rm_00.png)
 
 The distribution of mpg is approximately normal and there are no apparent outliers skewing our data. Great! Now let's check how mpg varies by automatic versus manual transmission.
 ```r
@@ -49,7 +47,7 @@ boxplot(mpg~am, data = mtcars,
         ylab = "Miles per Gallon",
         main = "MPG by Transmission Type")
 ```
-![plot of chunk Rplot](rm_02.png)
+![plot of chunk Rplot](rm_001.png)
 
 
 Again, there are no apparent outlier in our dataset. Morever, we can easily see a difference in the MPG by transmission type. As suspected, manual transmission seems to get better miles per gallon than automatic transmission. However, we should dig deeper.
@@ -164,7 +162,7 @@ Before we report the details of our model, it is important to check the residual
 par(mfrow = c(2,2))
 plot(bestfit)
 ```
-![plot of chunk Rplot](rm_03.png)
+![plot of chunk Rplot](rm_002.png)
 
 Our residuals are normally distributed and homoskedastic. We can now report the estimates from our final model.
 ```r
