@@ -1,7 +1,7 @@
 ---
 title       : Iris Species Prediction
 subtitle    : A better way to figure out what kind of flower you have
-author      : Brett Condron
+author      : bcondron
 job         : 
 framework   : shower        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -28,12 +28,6 @@ Just log on to http://bcondron.shinyapps.io/App-1 and enter in the measurements 
 ## So easy anybody can use it!
 
 The <i>Iris Species Prediction App</i> is incredibly user friendly. Your customers don't have to take your word for it anymore, since they can take the measurements themselves and put in the data. No programming or special knowledge about flowers required! Say your flower has 4.3 centimeter long sepals, 2 centimeter wide sepals, 1 centimeter long petals, and .1 centimeter wide petals. To a normal customer, this might be confusing, but our algorithms make short work of it!
-
----
-
-## Our Classification Tree
-
-![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
 
 ---
 
