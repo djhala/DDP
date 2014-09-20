@@ -7,6 +7,7 @@ shinyUI(fluidPage(
         numericInput('Petal.Length', 'Petal Length in Centimeters', 4.3, min = 0, max = 10, step = .1),
         numericInput('Petal.Width', 'Petal Width in Centimeters', 1.3, min = 0, max = 6, step = .1),
         submitButton('Submit')
+		
     ),
     mainPanel(position = "center",
         h2('Results'),
