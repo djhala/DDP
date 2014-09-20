@@ -30,7 +30,10 @@ Just log on to http://bcondron.shinyapps.io/App-1 and enter in the measurements 
 The <i>Iris Species Prediction App</i> is incredibly user friendly. Your customers don't have to take your word for it anymore, since they can take the measurements themselves and put in the data. No programming or special knowledge about flowers required! Say your flower has 4.3 centimeter long sepals, 2 centimeter wide sepals, 1 centimeter long petals, and .1 centimeter wide petals. To a normal customer, this might be confusing, but our algorithms make short work of it!
 
 ---
+## Our Classification Tree
 
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1.png) 
+---
 ## Example
 Our second opinion model is too much to fit on one slide, but here's an example of how it works! You just put in the dimensions from two slides ago and voila!
 
