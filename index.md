@@ -1,7 +1,7 @@
 ---
 title       : Iris Species Prediction
 subtitle    : A better way to figure out what kind of flower you have
-author      : bcondron
+author      : djhala
 job         : 
 framework   : shower        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
